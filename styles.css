@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    /*color: rgb(21, 36, 207);*/
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(./pexels-jakub-novacek-924824.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    /*background: linear-gradient(90deg, blue, darkblue);*/
+}
+
+#logo {
+    max-width: 25vw;
+}
+
+ul {
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;    
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    margin-bottom: 45px;
+    /*margin-bottom: 2vh;*/
+    /*border-bottom: 2px solid #FFF; */
+    /*box-shadow: 0px 0px 10px 0px #fff;*/
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 10px;
+}
+
+header ul li a {
+    transition: 700ms;
+}
+
+header ul li a:hover{
+    color: #c09717;
+    text-decoration: underline;
+}
+
+
+.container{
+    text-align: center;
+}
+
+.container .name h1{
+    font-size: 60px;
+}
+
+.container .name h5{
+    font-size: 30px;
+}
+
+#arrow {
+    font-size: 50px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+    margin: 1vh auto;
+    width: 60px;
+    border: 2px solid #a09038;
+    border-radius: 10px;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotatearrow {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 1vh auto;
+    font-size: 20px;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input{
+    width: 60%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+    width: 20%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c09717 50%,  #9c551b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #FFF;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    transition: all 300ms ease-out;
+    margin-left: -5px;
+    margin-top: 20px;
+}
+
+.form button:hover{
+    background-position: left bottom;
+    color: #FFF;
+
+}
+
+@media only screen and (max-width:768px) {
+    .form {
+        width: 100%;
+    }
+
+    .container .name h1{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    ul {
+        font-size: 12px;
+    }
+
+    .container .name h1{
+        font-size: 30px;
+    }
+
+    .container .name h5{
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        margin: 1vh auto;
+        text-align: justify;
+    }
+}
